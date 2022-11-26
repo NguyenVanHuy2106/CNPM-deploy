@@ -1,0 +1,2 @@
+run auto-load nodejs
+npx nodemon server.js
