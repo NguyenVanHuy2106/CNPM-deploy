@@ -6,7 +6,7 @@ const db = require("../config/db");
 
 module.exports = {
   get: (req, res) => {
-    let sql = "call PRC_GETALLPRODUCT";
+    let sql = "SELECT * FROM products";
     db.query(sql, (err, response) => {
       if (err) throw err;
       res.json({ message: response[0] });
